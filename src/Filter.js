@@ -6,7 +6,7 @@ const Filter = () => {
     
     return (
         <div>
-             
+            Filter 
         </div>
     )
 }
