@@ -1,0 +1,139 @@
+div.search {
+    width: 800px;
+    height: 70px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    margin: 50px auto;
+    padding: 40px;
+    color: white;
+    box-shadow: -10px 9px 20px 0.7px rgba(255,255,255,0.2);
+
+
+}
+
+input {
+    display: block;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 2px 10px;
+    font-size: 2rem;
+}
+
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px;
+    z-index: 500;
+}
+
+.filter img {
+    height: 50px;
+    width: 50px;
+    transition: width 1s, height 1s;
+    
+}
+
+.filter img:hover {
+    height: 64px;
+    width: 64px;
+    transition: width 1s, height 1s;
+}
+
+.filter p {
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+
+div.filter-item {
+    height: 100px;
+    width: 150px;
+    background-color:transparent;
+    color:white;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1000;
+    border: 3px solid lightgray;
+    border-radius: 8px;
+}
+
+div.filter-item div {
+    user-select: none;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    /* background: rgba(0,0,0,0.8);
+    backdrop-filter: saturate(180%) blur(10px); */
+    animation-delay: 2.5s;
+    background: transparent;
+    background: -moz-radial-gradient(top right, #363530, #2098cf);
+    background: radial-gradient(to bottom left, #363530, #2098cf);
+    background: -webkit-radial-gradient(top right, #363530, #aecad6);
+    cursor: pointer;
+
+}
+
+div.filter-item div:hover {
+    background: linear-gradient(207deg, rgba(2,0,36,1) 0%, rgba(182,59,194,1) 35%, rgba(0,212,255,1) 100%);
+    box-shadow: -10px 9px 20px 0.7px rgba(255,255,255,0.2);
+}
+
+
+@media only screen 
+  and (min-device-width: 320px)
+  and (max-device-width: 800px) 
+  {
+    div.search {
+        width: 250px;
+        height: 30px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        margin: 20px auto;
+        padding: 10px;
+        color: white;
+        box-shadow: -10px 9px 20px 0.7px rgba(255,255,255,0.2);
+    
+    
+    }
+    
+    input {
+        display: block;
+        height: 100%;
+        width: 100%;
+        outline: none;
+        border: none;
+        padding: 0;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        padding: 1px 3px;
+        font-size: 1rem;
+    }
+}
+
+div.filter-item.display {
+    display: none;
+    transition: display 3s;
+}
